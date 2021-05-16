@@ -253,9 +253,11 @@ header {
   padding-top: 74px;
 }
 
-.tempate-image {
+.tempate-image img{
   padding: 24px 0;
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .template-info {
