@@ -7,7 +7,7 @@ html {
 body {
   line-height: 1.7;
   color: #594530;
-  font-family: '游ゴシック','ヒラギノ角ゴ ProN',sans-serif;
+  font-family: "游ゴシック", "ヒラギノ角ゴ ProN", sans-serif;
 }
 
 section {
@@ -18,23 +18,21 @@ a {
   -webkit-transition: all 0.5s 0s ease;
   transition: all 0.5s 0s ease;
 }
-
 a:hover {
   opacity: 0.7;
 }
 
 h2 {
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-size: 2.25rem;
 }
-
 h2::before {
   content: url(../images/icon_cat_small.png);
   padding-right: 16px;
 }
 
 h3 {
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-size: 1.8rem;
 }
 
@@ -43,7 +41,6 @@ h3 {
   margin: 0 auto;
   padding: 0 40px;
 }
-
 @media (max-width: 600px) {
   .inner {
     max-width: 600px;
@@ -82,14 +79,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .main-nav li {
   margin-left: 64px;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-size: 24px;
 }
-
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .main-nav li {
     margin-left: 32px;
     font-size: 18px;
@@ -105,7 +100,6 @@ header {
   height: 100vh;
   /* mv-sp */
 }
-
 @media (max-width: 600px) {
   #mv {
     background-size: cover;
@@ -119,14 +113,13 @@ header {
 .mv-title {
   text-align: center;
   font-size: 4.5rem;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   position: absolute;
   top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-
 @media (max-width: 600px) {
   .mv-title {
     font-size: 32px;
@@ -147,7 +140,6 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 @media (max-width: 600px) {
   .about-inner {
     max-width: 600px;
@@ -156,12 +148,10 @@ header {
     display: block;
   }
 }
-
 .about-inner p {
   margin-left: 48px;
   margin-bottom: 16px;
 }
-
 @media (max-width: 600px) {
   .about-inner p {
     margin-top: 24px;
@@ -179,7 +169,6 @@ header {
   margin: 24px 0 auto;
   padding: 0 40px;
 }
-
 .works-inner p {
   margin-bottom: 24px;
 }
@@ -191,16 +180,13 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .website-item {
   margin-bottom: 40px;
   text-align: center;
 }
-
-@media (max-width: 600px){
-  .website-item {
-    max-width: 100%;
-  }
+.website-item img {
+  max-width: 100%;
+  height: auto;
 }
 
 .banner-list {
@@ -210,30 +196,15 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
-@media (max-width: 600px){
-  .banner-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-
 .banner-item {
-  width: 30%;
+  width: calc((100% - 3.333% * 3) / 3);
   margin-right: 3.333%;
   margin-bottom: 40px;
   text-align: center;
 }
-
-@media (max-width: 600px){
-  .banner-item {
-  flex: 0 0 48%;
-  margin-right: 0;
-  margin-bottom: 30px;
-  }
+.banner-item img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* contact */
@@ -246,14 +217,15 @@ header {
 
 /* works_template */
 .template-title {
-  font-family: '游ゴシック','ヒラギノ角ゴ ProN',sans-serif;
+  font-family: "游ゴシック", "ヒラギノ角ゴ ProN", sans-serif;
   font-weight: bold;
   padding-top: 74px;
 }
 
-.tempate-image img{
+.tempate-image {
   padding: 24px 0;
-  width: 100%;
+}
+.tempate-image img {
   max-width: 100%;
   height: auto;
 }
@@ -268,7 +240,7 @@ header {
   padding-bottom: 24px;
 }
 
-.template-link{
+.template-link {
   color: #0176D1;
 }
 

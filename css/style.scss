@@ -80,6 +80,11 @@ header {
     margin-left: 64px;
     font-family: 'Hind', sans-serif;
     font-size: 24px;
+
+    @media (max-width: 600px){
+      margin-left: 32px;
+      font-size: 18px;
+    }
   }
 }
 
@@ -174,6 +179,11 @@ header {
   &-item{
     margin-bottom: 40px;
     text-align: center;
+
+    & img{
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -184,15 +194,15 @@ header {
   }
 
   &-item{
-    width: calc((100% - 3.333% * 2) / 3);
+    width: calc((100% - 3.333% * 3) / 3);
     margin-right: 3.333%;
     margin-bottom: 40px;
     text-align: center;
-  }
 
-  &-img{
-    max-width: 100%;
-    height: auto;
+    & img{
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -221,8 +231,12 @@ header {
 
 .tempate-image{
     padding: 24px 0;
-    max-width: 100%;
-    height: auto;
+
+    & img{
+      max-width: 100%;
+      height: auto;
+    }
+   
 }
 
 .template-info{
