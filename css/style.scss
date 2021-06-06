@@ -177,6 +177,8 @@ header {
   }
 
   &-item{
+    width: calc((100% - 3.333% * 3) / 3);
+    margin-right: 3.333%;
     margin-bottom: 40px;
     text-align: center;
 
@@ -236,7 +238,7 @@ header {
       max-width: 100%;
       height: auto;
     }
-   
+
 }
 
 .template-info{
