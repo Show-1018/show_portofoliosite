@@ -148,6 +148,7 @@ header {
   @media(max-width:600px){
     margin-top: 24px;
     margin-left: auto;
+    text-align: left;
   }
     }
 
@@ -167,6 +168,10 @@ header {
 
   p {
     margin-bottom: 24px;
+
+    @media(max-width:600px){
+      text-align: left;
+    }
   }
 }
 
