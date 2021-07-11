@@ -59,34 +59,110 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 74px;
   z-index: 1;
   box-shadow: 0 5px 10px -6px rgba(85,85,85,0.1);
 }
 
+.btn-nav{
+    position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	height: 24px;
+	z-index: 3;
+
+    span{
+    position: absolute;
+	width: 100%;
+	height: 4px;
+	background: #594530;
+	border-radius: 10px;
+	-webkit-transition: all 400ms;
+	transition: all 400ms;
+
+    &:nth-child(1) {
+	top:0;
+    }
+    &:nth-child(2) {
+	top:10px;
+    }
+    &:nth-child(3) {
+	top:20px;
+    }
+    }
+
+    @media(min-width: 600px){
+        display: none;
+    }
+}
+
+#gnav{
+    position: fixed;
+	top: 0;
+	right: -100%;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+
+    @media(min-width: 600px){
+        position: fixed;
+		top: 0;
+		right: 0;
+		height: 50px;
+    }
+
+    #gnav.open{
+    right: 0px;
+    }
+
+    .main-nav{
+    width: 100%;
+	height:auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+    @media(min-width: 600px){
+        display: flex;
+		flex-direction: row;
+		margin-top: 17px;
+        margin-bottom: 17px;
+		position: fixed;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li{
+        @media(min-width: 600px){
+            margin-left: 64px;
+            font-family: 'Hind', sans-serif;
+            font-size: 24px;
+        }
+    }
+    }
+}
+
 .logo {
   width: 40px;
+  height: auto;
 }
 
-.main-nav {
-  display: flex;
-  font-size: 1.5rem;
-  list-style: none;
-  margin-top: 17px;
-  margin-bottom: 17px;
-  justify-content: center;
-  align-items: center;
+// .main-nav {
+//   display: flex;
+//   font-size: 1.5rem;
+//   list-style: none;
+//   margin-top: 17px;
+//   margin-bottom: 17px;
+//   justify-content: center;
+//   align-items: center;
 
-  li {
-    margin-left: 64px;
-    font-family: 'Hind', sans-serif;
-    font-size: 24px;
-
-    @media (max-width: 600px){
-      margin-left: 32px;
-      font-size: 18px;
-    }
-  }
-}
+//   li {
+//     margin-left: 64px;
+//     font-family: 'Hind', sans-serif;
+//     font-size: 24px;
+//   }
+// }
 
 /* mv */
 
