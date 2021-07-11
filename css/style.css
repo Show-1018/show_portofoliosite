@@ -7,7 +7,7 @@ html {
 body {
   line-height: 1.7;
   color: #594530;
-  font-family: "游ゴシック", "ヒラギノ角ゴ ProN", sans-serif;
+  font-family: '游ゴシック','ヒラギノ角ゴ ProN',sans-serif;
 }
 
 section {
@@ -15,23 +15,26 @@ section {
 }
 
 a {
+  -webkit-transition: all 0.5s 0s ease;
   transition: all 0.5s 0s ease;
 }
+
 a:hover {
   opacity: 0.7;
 }
 
 h2 {
-  font-family: "Hind", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 2.25rem;
 }
+
 h2::before {
   content: url(../images/icon_cat_small.png);
   padding-right: 16px;
 }
 
 h3 {
-  font-family: "Hind", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 1.8rem;
 }
 
@@ -40,6 +43,7 @@ h3 {
   margin: 0 auto;
   padding: 0 40px;
 }
+
 @media (max-width: 600px) {
   .inner {
     max-width: 600px;
@@ -56,7 +60,8 @@ header {
   width: 100%;
   height: 74px;
   z-index: 1;
-  box-shadow: 0 5px 10px -6px rgba(85, 85, 85, 0.1);
+  -webkit-box-shadow: 0 5px 10px -6px rgba(85, 85, 85, 0.1);
+          box-shadow: 0 5px 10px -6px rgba(85, 85, 85, 0.1);
 }
 
 .btn-nav {
@@ -67,6 +72,7 @@ header {
   height: 24px;
   z-index: 3;
 }
+
 .btn-nav span {
   position: absolute;
   width: 100%;
@@ -76,15 +82,19 @@ header {
   -webkit-transition: all 400ms;
   transition: all 400ms;
 }
+
 .btn-nav span:nth-child(1) {
   top: 0;
 }
+
 .btn-nav span:nth-child(2) {
   top: 10px;
 }
+
 .btn-nav span:nth-child(3) {
   top: 20px;
 }
+
 @media (min-width: 600px) {
   .btn-nav {
     display: none;
@@ -99,6 +109,7 @@ header {
   height: 100%;
   z-index: 2;
 }
+
 @media (min-width: 600px) {
   #gnav {
     position: fixed;
@@ -107,31 +118,49 @@ header {
     height: 50px;
   }
 }
+
 #gnav #gnav.open {
   right: 0px;
 }
+
 #gnav .main-nav {
   width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
+
 @media (min-width: 600px) {
   #gnav .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-top: 17px;
     margin-bottom: 17px;
     position: fixed;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+
 @media (min-width: 600px) {
   #gnav .main-nav li {
     margin-left: 64px;
-    font-family: "Hind", sans-serif;
+    font-family: 'Hind', sans-serif;
     font-size: 24px;
   }
 }
@@ -150,6 +179,7 @@ header {
   height: 100vh;
   /* mv-sp */
 }
+
 @media (max-width: 600px) {
   #mv {
     background-size: cover;
@@ -163,12 +193,14 @@ header {
 .mv-title {
   text-align: center;
   font-size: 4.5rem;
-  font-family: "Hind", sans-serif;
+  font-family: 'Hind', sans-serif;
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
+
 @media (max-width: 600px) {
   .mv-title {
     font-size: 32px;
@@ -182,9 +214,14 @@ header {
   max-width: 1000px;
   margin: 24px 0 auto;
   padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 @media (max-width: 600px) {
   .about-inner {
     max-width: 600px;
@@ -193,10 +230,12 @@ header {
     display: block;
   }
 }
+
 .about-inner p {
   margin-left: 48px;
   margin-bottom: 16px;
 }
+
 @media (max-width: 600px) {
   .about-inner p {
     margin-top: 24px;
@@ -215,9 +254,11 @@ header {
   margin: 24px 0 auto;
   padding: 0 40px;
 }
+
 .works-inner p {
   margin-bottom: 24px;
 }
+
 @media (max-width: 600px) {
   .works-inner p {
     text-align: left;
@@ -225,30 +266,40 @@ header {
 }
 
 .website-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .website-item {
   width: calc((100% - 3.333% * 3) / 3);
   margin-right: 3.333%;
   margin-bottom: 40px;
   text-align: center;
 }
+
 .website-item img {
   max-width: 100%;
   height: auto;
 }
 
 .banner-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .banner-item {
   width: calc((100% - 3.333% * 3) / 3);
   margin-right: 3.333%;
   margin-bottom: 40px;
   text-align: center;
 }
+
 .banner-item img {
   max-width: 100%;
   height: auto;
@@ -264,7 +315,7 @@ header {
 
 /* works_template */
 .template-title {
-  font-family: "游ゴシック", "ヒラギノ角ゴ ProN", sans-serif;
+  font-family: '游ゴシック','ヒラギノ角ゴ ProN',sans-serif;
   font-weight: bold;
   padding-top: 74px;
 }
@@ -272,6 +323,7 @@ header {
 .tempate-image {
   padding: 24px 0;
 }
+
 .tempate-image img {
   max-width: 100%;
   height: auto;
@@ -296,3 +348,4 @@ header {
   background-color: #ecfafb;
   text-align: center;
 }
+/*# sourceMappingURL=style.css.map */
