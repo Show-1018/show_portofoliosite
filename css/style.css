@@ -99,24 +99,24 @@ nav {
 
 .menu {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  /*滑らかに表示*/
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+}
+.menu li:nth-child(1) {
+  display: none;
 }
 
 .menu.open {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
-  /*メニューを元の位置へ戻す*/
 }
 
 .Toggle {
   display: block;
   position: fixed;
-  /* bodyに対しての絶対位置指定 */
   width: 42px;
   height: 42px;
   cursor: pointer;
@@ -129,10 +129,7 @@ nav {
   width: 40px;
   border-bottom: solid 4px #594530;
   -webkit-transition: 0.35s ease-in-out;
-  /*変化の速度を指定*/
-  /*変化の速度を指定*/
   transition: 0.35s ease-in-out;
-  /*変化の速度を指定*/
 }
 
 .Toggle span:nth-child(1) {
@@ -149,7 +146,6 @@ nav {
 
 .Toggle.active span:nth-child(1) {
   top: 18px;
-  /* 1番目のspanをマイナス45度に */
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
@@ -207,6 +203,10 @@ nav {
 
   .menu ul li a:hover {
     background-color: transparent;
+  }
+
+  .menu li:nth-child(1) {
+    display: block;
   }
 }
 /* mv */
