@@ -26,7 +26,7 @@ a {
 }
 
 h2 {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Bad Script', cursive;
   font-size: 2.25rem;
 
   &::before{
@@ -36,7 +36,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Bad Script', cursive;
   font-size: 1.8rem;
 }
 
@@ -89,7 +89,7 @@ nav{
   display:block;
   font-size: 1.5rem;
   font-weight:bold;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Bad Script', cursive;
   padding: 2em;
   text-decoration:none;
   }
@@ -99,10 +99,6 @@ nav{
   background-color:#ffffff;
   transition: 0.5s ease;
   transform: translateX(100%);
-
-  li:nth-child(1){
-    display: none;
-  }
 }
 
 .menu.open {
@@ -159,9 +155,6 @@ nav{
   nav{
     display: flex;
    }
-   #logo{
-     display: none;
-   }
     
    .Toggle{
     display: none;
@@ -175,10 +168,10 @@ nav{
    transform: translateX(0);
    }
    .menu ul{
-    height: 7px;
+    height: 74px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
    }
    .menu ul li a{
@@ -219,7 +212,7 @@ nav{
 .mv-title {
   text-align: center;
   font-size: 4.5rem;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Bad Script', cursive;
   position: absolute;
   top: 40%;
   left: 50%;
