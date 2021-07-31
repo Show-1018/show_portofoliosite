@@ -30,8 +30,8 @@ h2 {
   font-size: 2.25rem;
 
   &::before{
-    content:url(../images/icon_cat_small.png);
-    padding-right: 16px;
+    content:url(../images/icon_cat.png);
+    padding-right: 8px;
   }
 }
 
@@ -275,10 +275,20 @@ nav{
   }
 }
 
+.subtitle{
+  display: inline-block;
+  border-bottom:2px solid #594530;
+
+  & :nth-child(1){
+    margin-top: 24px;
+  }
+}
+
 .website{
   &-list{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
 
   &-item{
@@ -295,9 +305,11 @@ nav{
 }
 
 .banner{
+
   &-list{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
 
   &-item{
@@ -313,13 +325,6 @@ nav{
   }
 }
 
-// .banner-item {
-//   width: 30%;
-//   margin-right: 3.333%;
-//   margin-bottom: 40px;
-//   text-align: center;
-// }
-
 /* contact */
 .contact-image{
   width: auto;
@@ -329,7 +334,6 @@ nav{
 }
 
 /* works_template */
-
 .template-title{
     font-family: '游ゴシック','ヒラギノ角ゴ ProN',sans-serif;
     font-weight: bold;
