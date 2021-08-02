@@ -6,7 +6,7 @@
     <title>Show's Portfolio site</title>
     <meta name="description" content="Showのポートフォリオサイトです">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!--og-->
     <meta property="og:image" content="images/neko_og.jpg">
     <meta property="og:locale" content="ja_JP">
@@ -15,39 +15,55 @@
     <meta property="og:url" content="https://show-1018.github.io/show_portofoliosite/">
 
     <!--favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_v0.16/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package_v0.16/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package_v0.16/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon_package_v0.16/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/show_portofoliosite/images/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/show_portofoliosite/images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/show_portofoliosite/images/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/show_portofoliosite/images/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/show_portofoliosite/images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/destyle.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- JS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/fade.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/show_portofoliosite/js/jquery.min.js"></script>
+    <script src="/show_portofoliosite/js/fade.js"></script>
+    <script src="/show_portofoliosite/js/main.js"></script>
+    <script src="/show_portofoliosite/js/menu.js"></script>
 
 </head>
 
 <body>
     <header>
         <div class="inner">
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="#mv"><img class="logo" src="images/icon_cat.png" alt="toppage"></a></li>
+        <nav>
+        <div class="drawer">
+
+            <div><a href="#mv"><img id="logo" src="images/icon_cat.png" alt="toppage"></a></div>
+
+            <p class="Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+
+        </div>
+
+            <div class="menu">
+                <ul>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Works">Works</a></li>
                     <li><a href="#Contact">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+
+        </nav>
+    </div>
     </header>
 
     <section id="mv">
@@ -80,14 +96,7 @@
                     画像をクリックすると詳細ページに移動します。</p>
                 <h3 class="subtitle">Website</h3>
                 <div class="website-list">
-                    <a class="website-item" href="＃">
-                        <p class="website-img">
-                            <img class="website-img__image" src="images/website/site.png" alt="monphy">
-                        </p>
-                        <p works-name>現在制作中</p>
-                        </a>
-                
-                    <a class="website-item" href="./works/website/lp-employment.html">
+                    <a class="website-item" href="/show_portofoliosite/works/website/lp-employment.html">
                         <p class="website-img">
                             <img class="website-img__image" src="images/website/lp-employment.jpg" alt="架空採用サイト">
                         </p>
@@ -97,31 +106,31 @@
 
                 <h3 class="subtitle">Banner</h3>
                 <div class="banner-list">
-                    <a class="banner-item" href="./works/banner/works_banner_valentine.html">
+                    <a class="banner-item" href="/show_portofoliosite/works/banner/works_banner_valentine.html">
                         <p class="banner-img">
                             <img class="banner-img__image" src="images/banner/1204_valentine.jpg" alt="valentine">
                         </p>
                         <p works-name>バレンタイン広告バナー</p>
                     </a>
-                    <a class="banner-item" href="./works/banner/works_banner_university.html">
+                    <a class="banner-item" href="/show_portofoliosite/works/banner/works_banner_university.html">
                         <p class="banner-img">
                             <img class="banner-img__image" src="images/banner/1227_university.jpg" alt="university">
                         </p>
                         <p works-name>オープンキャンパス広告バナー</p>
                     </a>
-                    <a class="banner-item" href="./works/banner/works_banner_menscloth.html">
+                    <a class="banner-item" href="/show_portofoliosite/works/banner/works_banner_menscloth.html">
                         <p class="banner-img">
                             <img class="banner-img__image" src="images/banner/1210_mensclothing.jpg" alt="mensclothing">
                         </p>
                         <p works-name>紳士服広告バナー</p>
                     </a>
-                    <a class="banner-item" href="./works/banner/works_banner_travel.html">
+                    <a class="banner-item" href="/show_portofoliosite/works/banner/works_banner_travel.html">
                         <p class="banner-img">
                             <img class="banner-img__image" src="images/banner/210103_travel.jpg" alt="travel">
                         </p>
                         <p works-name>旅行広告バナー</p>
                     </a>
-                    <a class="banner-item" href="./works/banner/works_banner_rentalserver.html">
+                    <a class="banner-item" href="/show_portofoliosite/works/banner/works_banner_rentalserver.html">
                         <p class="banner-img">
                             <img class="banner-img__image" src="images/banner/210102_rentalserver.jpg"
                                 alt="rentalserver">
@@ -137,7 +146,7 @@
         <div class="inner">
             <h2 class="title">Contact</h2>
             <p>お気軽にどうぞ</p>
-            <a class="mailgo" data-address="xxxxx_xxxxxx1090" data-domain="gmail.com" href="">
+            <a class="mailgo" data-address="suttokonyannyan" data-domain="gmail.com" href="">
                 <img class="contact-image" src="images/mail.png" alt="mail">
             </a>
             <a href="https://www.instagram.com/heyanosmith_221/">
@@ -147,7 +156,7 @@
     </section>
 
     <section id="footer">
-        <p>©️2021/Shoko Nagata</p>
+        <p>©️2021/Show</p>
     </section>
 
     <script src="https://unpkg.com/mailgo@0.12.1/dist/mailgo.min.js"></script>
