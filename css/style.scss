@@ -252,6 +252,11 @@ nav{
   }
     }
 
+  .name{
+    font-size: 1.8rem;
+    font-family: 'Bad Script', cursive;
+  }
+
   }
 
 
@@ -267,7 +272,7 @@ nav{
   padding: 0 40px;
 
   p {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 
     @media(max-width:600px){
       text-align: left;
@@ -278,10 +283,7 @@ nav{
 .subtitle{
   display: inline-block;
   border-bottom:2px solid #594530;
-
-  & :nth-child(1){
-    margin-top: 24px;
-  }
+  margin-top: 24px;
 }
 
 .website{

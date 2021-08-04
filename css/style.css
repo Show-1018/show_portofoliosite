@@ -270,6 +270,10 @@ nav {
     text-align: left;
   }
 }
+.about-inner .name {
+  font-size: 1.8rem;
+  font-family: "Bad Script", cursive;
+}
 
 /* works */
 #Works {
@@ -282,7 +286,7 @@ nav {
   padding: 0 40px;
 }
 .works-inner p {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 @media (max-width: 600px) {
   .works-inner p {
@@ -293,8 +297,6 @@ nav {
 .subtitle {
   display: inline-block;
   border-bottom: 2px solid #594530;
-}
-.subtitle :nth-child(1) {
   margin-top: 24px;
 }
 
