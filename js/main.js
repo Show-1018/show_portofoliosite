@@ -13,7 +13,7 @@
     $(function () {
         var urlHash = location.hash;
         if (urlHash) {
-          $('body,html').stop().scrollTop(0);
+          $('body,html').scrollTop(0);
           setTimeout(function(){
             var headerHight = 74;//ヘッダーの高さ
             var target = $(urlHash);
